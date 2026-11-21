@@ -54,7 +54,10 @@ body.hc{line-height:1.6}
 .hc-doc pre code{border:0;padding:0;background:none}
 .hc-doc blockquote{margin:1em 0;padding:2px 16px;border-left:3px solid var(--line2);color:var(--tx2)}
 .hc-doc .tbl{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1em 0}
-.hc-doc .tbl :is(th,td):first-child{white-space:nowrap}
+.hc-doc .tbl table{border-collapse:collapse;width:100%;font-size:14px}
+.hc-doc .tbl :is(th,td){overflow-wrap:normal;word-break:normal;text-align:left;vertical-align:top;padding:8px 10px;border:1px solid var(--line)}
+.hc-doc .tbl th{background:var(--s1);font-weight:600}
+.hc-doc .tbl td code{overflow-wrap:normal;word-break:normal}
 .hc-doc :is(h2,h3).hit{animation:hc-fl 1.6s}
 @keyframes hc-fl{0%{background:var(--mark)}100%{background:transparent}}
 .hc-see{margin-top:40px;border-top:1px solid var(--line);padding-top:10px}
